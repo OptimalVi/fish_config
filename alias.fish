@@ -26,6 +26,8 @@ alias gch 'gt checkout';
 alias gcm 'gt commit -m ';
 alias gpl 'gt pull'; 
 alias gph 'gt push'; #TODO: function for upstream
+alias gph_up 'gt push --set-upstream';
+alias gph_up_origin 'gt push --set-upstream';
 alias gpars 'gt rev-parse';
 alias ggcbr 'gpars --abbrev-ref HEAD';
 # /Git
