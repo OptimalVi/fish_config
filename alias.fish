@@ -24,6 +24,8 @@ alias gt git;
 alias gad 'gt add';	
 alias gch 'gt checkout';
 alias gcm 'gt commit -m ';
+alias gcmg 'gt merge --no-ff';
+alias gcff 'gt merge';
 alias gpl 'gt pull'; 
 alias gph 'gt push'; #TODO: function for upstream
 alias gph_up 'gt push --set-upstream';
