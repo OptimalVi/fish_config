@@ -6,41 +6,56 @@ alias	pls	sudo;
 # Programs
 alias tb taskbook
 
-# Docker
-alias dc docker-compose;
-alias dcb 'dc build';
-alias dcud 'dc up -d';
-alias dcd 'dc down';
-alias dce 'dc exec';
+#region Docker
 alias dr docker;
-alias dps 'dr ps';
-alias dpsa 'dr ps -a';
-alias dei 'dr exec -i';
-alias deit 'dr exec -it';
-alias ddie 'dr stop (dr ps -qa)';
+alias dps 'docker ps';
+alias dpsa 'docker ps -a';
+alias dei 'docker exec -i';
+alias deit 'docker exec -it';
+alias ddie 'docker stop (dr ps -qa)';
+
+alias dc docker-compose;
+alias dcb 'docker-compose build';
+alias dcud 'docker-compose up -d';
+alias dcd 'docker-compose down';
+alias dce 'docker-compose exec';
 
 alias dbud 'dcd; dcb; dcud';
 alias ddiebud 'ddie; dcd; dcb; dcud';
+#endregion /Docker
 
-# Git
+#region Git
 alias gt git;
-alias gad 'gt add';	
-alias gch 'gt checkout';
-alias gcm 'gt commit -m ';
-alias gcmg 'gt merge --no-ff';
-alias gcff 'gt merge';
-alias gpl 'gt pull'; 
-alias gph 'gt push'; #TODO: function for upstream
-alias gph_up 'gt push --set-upstream';
-alias gph_up_origin 'gt push --set-upstream';
-alias gpars 'gt rev-parse';
-alias ggcbr 'gpars --abbrev-ref HEAD';
-# /Git
+alias gad 'git add';
 
-alias gtom 	'git checkout master';
-alias gtop 	'git checkout production';
-alias gnb 	'git checkout -b task/';
-alias gst 	'git status';	
+alias gbr 'git switch';
+alias gbrc 'git switch -c';
+
+alias gch 'git checkout';
+alias gchcb 'git checkout $cbr';
+
+alias gcm 'git commit -m ';
+alias gm 'git merge --no-ff';
+alias gmdef 'git merge';
+
+alias gpl 'git pull';
+alias gplf 'git pull --force';
+alias gph 'git push'; #TODO: function for upstream
+alias gup 'git push --set-upstream origin';
+alias gup_ 'git push --set-upstream';
+
+alias gclean 'git clean -n -d';
+alias gcleanf 'git clean -f -d';
+
+alias gpars 'git rev-parse';
+alias ghead 'gpars --abbrev-ref HEAD';
+
+alias gmaster 	'git switch master';
+alias gprod 	'git switch production';
+
+alias gst 	'git status';
+alias gs  'git status --short --branch';
+#endregion /Git
 
 # NPM
 ## future
