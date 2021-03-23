@@ -1,5 +1,8 @@
 #!/bin/fish
 
+alias	please	sudo;	
+alias	pls	sudo;	
+
 # Programs
 alias tb taskbook
 
