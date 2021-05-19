@@ -28,8 +28,6 @@ alias ddiebud 'ddie; dcd; dcb; dcud';
 alias gt git;
 alias gad 'git add';
 
-alias gbr 'git switch';
-alias gbrc 'git switch -c';
 
 alias gch 'git checkout';
 alias gchcb 'git checkout $cbr';
@@ -50,11 +48,17 @@ alias gcleanf 'git clean -f -d';
 alias gpars 'git rev-parse';
 alias ghead 'gpars --abbrev-ref HEAD';
 
+alias gst 	'git status';
+alias gs  'git status --short --branch';
+
+alias gbr 'git switch';
+alias gbrc 'git switch -c';
+alias gcbr 'git switch $cbr';
+alias gscbr 'set cbr (ghead)';
 alias gmaster 	'git switch master';
 alias gprod 	'git switch production';
 
-alias gst 	'git status';
-alias gs  'git status --short --branch';
+alias grs 'git restore --staged';
 #endregion /Git
 
 # NPM
