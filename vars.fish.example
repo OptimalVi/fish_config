@@ -1,0 +1,2 @@
+# paths with projects for quick access via pj 
+set -gx PROJECT_PATHS ~/projects_folder/ /other_projects_folder/
