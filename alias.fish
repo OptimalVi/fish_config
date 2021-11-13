@@ -51,6 +51,7 @@ alias ghead 'gpars --abbrev-ref HEAD';
 alias gst 	'git status';
 alias gs  'git status --short --branch';
 
+alias gb 'git branch';
 alias gbr 'git switch';
 alias gbrc 'git switch -c';
 alias gcbr 'git switch $cbr';
