@@ -32,9 +32,12 @@ alias gad 'git add';
 alias gch 'git checkout';
 alias gchcb 'git checkout $cbr';
 
+alias gc 'git commit';
 alias gcm 'git commit -m ';
 alias gm 'git merge --no-ff';
 alias gmdef 'git merge';
+alias gmnn 'git merge --no-commit --no-ff';
+alias gabort 'git merge --abort'
 
 alias gpl 'git pull';
 alias gplf 'git pull --force';
@@ -61,11 +64,6 @@ alias gprod 	'git switch production';
 
 alias grs 'git restore --staged';
 #endregion /Git
-
-# NPM
-## future
-alias fnrdev 	'npm run build:dev';
-alias fnrprod	'npm run build:prod';
 
 # ARTISAN
 alias par 'php artisan';
